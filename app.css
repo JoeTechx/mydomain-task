@@ -12,7 +12,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Quicksand', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -173,13 +173,13 @@ width: 7rem;
     grid-column: 1/3;
   }
   .home-title {
-    font-size: var(--big-font-size);
+    font-size: var(--h3-font-size);
   }
   
   .home-subtitle {
-    font-size: var(--h3-font-size);
+    font-size: var(--big-font-size);
     color: var(--text-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-0-75);
   }
   
@@ -263,6 +263,25 @@ width: 7rem;
   }
 /*==================== ABOUT ====================*/
 
+.about-image {
+    width: 200px;
+    justify-self: center;
+    align-self: center;
+  }
+  .about-title{
+      font-size: var(--small-font-size);
+      font-weight: 700;
+ line-height: 1.3rem;
+  }
+  .about-subtitle{
+      font-size: var(--h2-font-size);
+      font-weight: 700;
+        }
+  .about-description {
+    text-align: left;
+    margin-bottom: var(--mb-2-5);
+  }
+  
 
 /*==================== hobbies ====================*/
 
