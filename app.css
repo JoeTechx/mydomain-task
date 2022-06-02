@@ -27,6 +27,7 @@
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
+  --font-bold: 700;
 
   /*========== Margins Bottom ==========*/
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -386,8 +387,78 @@ img {
 
 
 /*==================== LOGIN ====================*/
+.login{
+  /* height: calc(100vh - 11rem); */
+}
+.login-form{
+  margin: 0 auto 0;
+  width: 32rem;
+  /* background-color: var(--first-color-second-light); */
+  padding: 2.4rem;
+  border-radius: 0.5rem;
+}
+.login-title{
+  margin: 0.6rem 0 1rem;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+}
+label{
+  display: block;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  font-weight: var(--font-medium);
+}
+input{
+  width: 80%;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border:2px solid var(--first-color-second);
+  border-radius: 0.6rem;
+background-color: var(--body-color);
+}
+.login-terms{
+  font-size: 0.7rem;
+}
+.terms,.policy{
+  text-decoration: underline;
+}
+.login-btn{
+  margin-top: var(--mb-0-5);
+  padding-left: 10rem;
+  padding-right: 10rem;
+  border-color: transparent;
+  color: var(--container-color);
+}
+.forget-password{
+  text-align: center;
+  font-weight: 700;
+  margin-right: 5rem;
+  margin-bottom: var(--mb-2);
+  text-transform: capitalize;
+}
+.no-account{
+  text-align: center;
+  margin-right: 5rem;
+  margin-bottom: 1rem;
+}
+.sign-up-link{
+  color: var(--text-color);
+  font-weight: 700;
+}
+.google-sign-in {
+  text-align: center;
+  margin-right: 5rem;
+}
+.google-line{
+  text-align: center;
+width: 22.7rem;
 
-
+}
+.google-img{
+  margin-left: 6rem;
+  margin-top: var(--mb-1-5);
+  width: 10rem;
+}
 /*==================== SIGN UP ====================*/
 
 
@@ -402,6 +473,7 @@ img {
 .footer-container{
   text-align: center;
   margin-top: var(--mb-1-5);
+  margin-left: 16rem;
 }
 .footer-social{
   padding: .7rem;
