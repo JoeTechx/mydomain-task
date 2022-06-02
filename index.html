@@ -18,7 +18,7 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="index.html" class="nav-logo"> <img src="./image/logo.png" alt="zuri+i4g logo" class="logo-img"> </a>
+        <a href="index.html" class="nav-logo"> <img src="./image/logo.png" alt="zuri+i4g-logo" class="logo-img"> </a>
         <ul class="nav-list grid">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -27,10 +27,10 @@
             <a href="contact.html" class="nav-link">Contact Me</a>
           </li>
           <li class="nav-item">
-            <a href="login.html" class="nav-link">Login</a>
+            <a href="login.html" class="nav-link nav-button">Login</a>
           </li>
           <li class="nav-item">
-            <a href="sign up.html" class="nav-link">Sign up</a>
+            <a href="sign up.html" class="nav-link white-nav-btn">Sign up</a>
           </li>
         </ul>
       </nav>
@@ -40,19 +40,28 @@
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
-        <div class="home-content">
-          <h3 class="title">Welcome to my Domain</h3>
-          <h1 class="home-subtitle">I Am Oyinloye Joseph</h1>
-          <p class="home-description">A Frontend Engineer | UI/UX designer</p>
-          <button class="nav-btn">contact me</button>
-          <a href="" class="scroll-down">
-            <i class="uil uil-mouse-alt"></i>
-            Scroll-down
-            <i class="uil uil-angle-down"></i>
+        <div class="home-container container grid">
+          <div class="home-content grid">
+          <div class="home-data">
+            <h3 class="home-title">Welcome to my Domain</h3>
+            <h1 class="home-subtitle">I Am Oyinloye Joseph</h1>
+            <p class="home-description">A Frontend Engineer | UI/UX designer</p>
+            <a href="contact.html" class="button button--flex">
+              Contact Me <i class="uil uil-message button-icon"></i>
+            </a>
 
+            </a>
+          </div>
+          <img src="./image/image shape.png" alt="" class="home-img">
+        </div>
+        <div class="home-scroll">
+          <a href="#about" class="home-scroll-button button--flex">
+            <i class="uil uil-mouse-alt home-scroll-mouse"></i>
+            <span class="home-scroll-button-name">Scroll down</span>
+            <i class="uil uil-angle-down home-scroll-arrow"></i>
           </a>
         </div>
-        <img src="./image/image shape.png" alt="" class="home-img">
+        </div>
       </Section>
       <!--==================== ABOUT ====================-->
       <section class="about-me section" id="about-me">
