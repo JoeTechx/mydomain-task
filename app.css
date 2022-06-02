@@ -5,6 +5,7 @@
   /*========== Colors ==========*/
   --first-color: #324C5C;
   --first-color-second: #231942;
+  --first-color-second-light: #cabaf7;
   --text-color: #2F4858;
   --text-color-light: #696D7D;
   --body-color: #ECECEC;
@@ -86,6 +87,9 @@ h4 {
 }
 
 ul {
+  list-style: none;
+}
+ol{
   list-style: none;
 }
 
@@ -231,7 +235,7 @@ img {
   display: inline-block;
   background-color: var(--first-color-second);
   color: #fff;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
 }
@@ -329,14 +333,84 @@ img {
 
 /*==================== priorities ====================*/
 
+.priorities-title {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
+.priorities-subtitle {
+  font-size: var(--h2-font-size);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.priorities-list {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.priorities-image {
+  width: 200px;
+  justify-self: center;
+  align-self: center;
+}
 /*==================== skills ====================*/
+.skills-title {
+  font-size: var(--small-font-size);
+  text-transform: uppercase;
+  font-weight: 700;
+}
 
+.skills-subtitle {
+  font-size: var(--h2-font-size);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.skills-list {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.skills-image {
+  width: 200px;
+  justify-self: center;
+  align-self: center;
+}
+
+.last-contact{
+  margin-top: var(--mb-2-5);
+}
 /*==================== CONTACT ME ====================*/
 
 
-/*==================== FOOTER ====================*/
+/*==================== LOGIN ====================*/
 
+
+/*==================== SIGN UP ====================*/
+
+
+/*==================== FOOTER ====================*/
+.footer{
+  margin-top: 5rem;
+}
+.footer-line{
+  width: 100%;
+  border: .1px solid var(--first-color-second-light);
+}
+.footer-container{
+  text-align: center;
+  margin-top: var(--mb-1-5);
+}
+.footer-social{
+  padding: .7rem;
+  color: var(--first-color);
+  font-size: 1.3rem;
+}
+.description-footer,.footer-copy{
+  letter-spacing: 0.16rem;
+}
 /*========== SCROLL BAR ==========*/
 
 
