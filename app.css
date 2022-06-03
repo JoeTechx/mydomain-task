@@ -90,7 +90,8 @@ h4 {
 ul {
   list-style: none;
 }
-ol{
+
+ol {
   list-style: none;
 }
 
@@ -159,6 +160,7 @@ img {
 
 .white-nav-btn {
   background-color: var(--body-color);
+  color: var(--text-color);
   padding: 0.5rem 1rem;
   border-top: 3px solid;
   border-bottom: 3px solid;
@@ -356,6 +358,7 @@ img {
   justify-self: center;
   align-self: center;
 }
+
 /*==================== skills ====================*/
 .skills-title {
   font-size: var(--small-font-size);
@@ -380,109 +383,232 @@ img {
   align-self: center;
 }
 
-.last-contact{
+.last-contact {
   margin-top: var(--mb-2-5);
 }
+
 /*==================== CONTACT ME ====================*/
 
 
 /*==================== LOGIN ====================*/
-.login{
-  /* height: calc(100vh - 11rem); */
-}
-.login-form{
+/* .login{
+
+} */
+.login-form {
   margin: 0 auto 0;
   width: 32rem;
-  /* background-color: var(--first-color-second-light); */
   padding: 2.4rem;
   border-radius: 0.5rem;
 }
-.login-title{
+
+.login-title,
+.reg-title {
   margin: 0.6rem 0 1rem;
   font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
 }
-label{
+
+label {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
-  font-weight: var(--font-medium);
+  font-weight: var(--font-bold);
 }
-input{
+
+input {
   width: 80%;
   margin-bottom: 0.5rem;
   padding: 0.8rem 1.2rem;
-  border:2px solid var(--first-color-second);
+  border: 2px solid var(--first-color-second);
   border-radius: 0.6rem;
-background-color: var(--body-color);
+  background-color: var(--body-color);
 }
-.login-terms{
+
+.login-terms {
   font-size: 0.7rem;
 }
-.terms,.policy{
+
+.terms,
+.policy {
   text-decoration: underline;
 }
-.login-btn{
+
+.login-btn {
   margin-top: var(--mb-0-5);
   padding-left: 10rem;
   padding-right: 10rem;
   border-color: transparent;
   color: var(--container-color);
 }
-.forget-password{
+
+.forget-password {
   text-align: center;
   font-weight: 700;
   margin-right: 5rem;
   margin-bottom: var(--mb-2);
   text-transform: capitalize;
 }
-.no-account{
+
+.no-account {
   text-align: center;
   margin-right: 5rem;
   margin-bottom: 1rem;
 }
-.sign-up-link{
+
+.sign-up-link {
   color: var(--text-color);
   font-weight: 700;
 }
+
 .google-sign-in {
   text-align: center;
   margin-right: 5rem;
 }
-.google-line{
+
+.google-line {
   text-align: center;
-width: 22.7rem;
+  width: 22.7rem;
 
 }
-.google-img{
+
+.google-img {
   margin-left: 6rem;
   margin-top: var(--mb-1-5);
   width: 10rem;
 }
+
 /*==================== SIGN UP ====================*/
+.section {
+  margin: auto;
+}
+
+.reg-form-section {
+  width: 64%;
+  margin: 0 auto 0;
+  padding-top: 1.4rem;
+}
+
+.reg-form {
+  margin: 0 4rem 0;
+}
+
+.reg-title {
+  font-size: var(--small-font-size);
+  text-transform: capitalize;
+  padding: 0 2.4rem 2.4rem;
+}
+
+.have--account {
+  font-weight: var(--font-bold);
+  color: var(--text-color);
+}
+
+.account-detail {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.5rem;
+  padding: 0 2.4rem 0.4rem;
+}
+
+.reg-detail input,
+.reg--detail input {
+  width: 80%;
+  padding: 1.2rem;
+
+  border-radius: 0.7rem;
+}
+
+.reg-detail label,
+.reg--detail label {
+  margin-bottom: 1rem;
+}
+
+.reg--detail {
+  width: 112%;
+  padding: 0 2.4rem 0.4rem;
+}
+
+select {
+  width: 80%;
+  margin-bottom: var(--mb-1);
+  padding: 1.2rem 1.4rem;
+  border: 2px solid var(--first-color-second);
+  border-radius: 0.6rem;
+}
+
+.character-8 {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.google-btn,
+.facebook-btn,
+.twitter-btn,
+.sign_in {
+  padding: 1rem 9rem;
+  margin-left: 8rem;
+  width: 62%;
+  border-radius: 2rem;
+}
+
+.sign_in {
+  padding: 1rem 12rem;
+
+}
+
+.twitter-btn {
+  width: 62%;
+  margin-bottom: 3rem;
+}
+
+.login--instead {
+  text-align: center;
+  margin-right: 4rem;
+}
+
+.login-instead {
+  color: var(--text-color);
+  font-weight: var(--font-bold)
+}
+
+.sign-in-social {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+
+
+
 
 
 /*==================== FOOTER ====================*/
-.footer{
+.footer {
   margin-top: 5rem;
 }
-.footer-line{
+
+.footer-line {
   width: 100%;
   border: .1px solid var(--first-color-second-light);
 }
-.footer-container{
+
+.footer-container {
   text-align: center;
   margin-top: var(--mb-1-5);
   margin-left: 16rem;
 }
-.footer-social{
+
+.footer-social {
   padding: .7rem;
   color: var(--first-color);
   font-size: 1.3rem;
 }
-.description-footer,.footer-copy{
+
+.description-footer,
+.footer-copy {
   letter-spacing: 0.16rem;
 }
+
 /*========== SCROLL BAR ==========*/
 
 
