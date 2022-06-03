@@ -142,9 +142,12 @@ img {
   align-items: center;
 }
 
+.nav-link {
+  color: var(--text-color);
+}
+
 .nav-item {
   font-size: 1rem;
-
 }
 
 .nav-button {
@@ -388,12 +391,74 @@ img {
 }
 
 /*==================== CONTACT ME ====================*/
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 55%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 2rem auto 0;
+  padding: 3.6rem 2.4rem;
+  border-radius: 1rem;
+}
 
+.contact-text {
+  padding-left: 2.4rem;
+}
+
+.contact {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.contact-detail {
+  padding: 0.3rem;
+}
+
+.email-icon,
+.email-link,
+.phone-icon,
+.phone-link {
+  color: var(--text-color);
+}
+
+.email-link,
+.phone-link {
+  margin-left: 0.6rem;
+}
+
+textarea {
+  width: 80%;
+  min-height: 11.2rem;
+  border: 2px solid var(--first-color-second);
+  background-color: var(--body-color);
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  padding-left: 6.5rem;
+  width: 80%;
+  border-radius: 2rem;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: var(--font-bold);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social-group {
+  margin-top: 0.6rem;
+}
+
+.follow-socials {
+  margin-top: 0.6rem;
+}
 
 /*==================== LOGIN ====================*/
-/* .login{
-
-} */
 .login-form {
   margin: 0 auto 0;
   width: 32rem;
