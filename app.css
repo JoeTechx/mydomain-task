@@ -84,7 +84,7 @@ h2,
 h3,
 h4 {
   color: var(--text-color);
-  font-weight: var(--font-semi-bold);
+  font-weight: var(--font-bold);
 }
 
 ul {
@@ -113,7 +113,7 @@ img {
 
 .grid {
   display: grid;
- grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header {
@@ -141,7 +141,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 3.2rem;
-line-height: 2rem;
+  line-height: 2rem;
 }
 
 .nav-link {
@@ -178,22 +178,25 @@ line-height: 2rem;
 }
 
 /*==================== HOME ====================*/
- section {
+section {
   margin: 0 0 12rem;
 }
-.home-data{
+
+.home-data {
   width: 90%;
   margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
 }
+
 .home-title {
   font-size: var(--h3-font-size);
   padding-bottom: 0.5rem;
 }
+
 .home-subtitle {
-  font-size: 1.99rem;
-padding-bottom: 0.7rem;
+  font-size: 1.89rem;
+  padding-bottom: 0.7rem;
   color: var(--text-color);
   font-weight: var(--font-bold);
 }
@@ -201,15 +204,18 @@ padding-bottom: 0.7rem;
 .home-description {
   margin-bottom: var(--mb-1);
 }
+
 .home-img {
   width: 33rem;
-position: relative;
-margin-left: auto;
+  position: relative;
+  margin-left: auto;
 }
-.home-scroll{
+
+.home-scroll {
   margin-top: -2rem;
   margin-bottom: 5rem;
 }
+
 .home-scroll-button {
   color: var(--first-color);
   transition: 0.3s;
@@ -232,7 +238,7 @@ margin-left: auto;
 
 .home-scroll-arrow {
   font-size: 1.25rem;
-}  
+}
 
 /*==================== BUTTONS ====================*/
 .button {
@@ -284,12 +290,13 @@ margin-left: auto;
 }
 
 /*==================== ABOUT ====================*/
- .about-me {
+.about-me {
   padding: 0.6rem 2.4rem;
 }
+
 .about-container {
-margin: 0 auto;
-padding: 0 4.6rem;
+  margin: 0 auto;
+  padding: 0 4.6rem;
 }
 
 .about-image {
@@ -299,9 +306,11 @@ padding: 0 4.6rem;
   align-items: center;
   justify-content: center;
 }
-.about-content{
+
+.about-content {
   margin-left: 2rem;
 }
+
 .about-title {
   font-size: 1.1rem;
   font-weight: 700;
@@ -317,10 +326,14 @@ padding: 0 4.6rem;
   text-align: left;
   margin-top: auto;
   margin-bottom: auto;
-} 
+}
 
 /*==================== hobbies ====================*/
-/* .hobbies-title {
+.hobbies-container, .priorities-container, .skills-container {
+  margin: 7rem auto;
+  padding: 0 4.6rem;
+}
+.hobbies-title {
   font-size: var(--small-font-size);
   text-transform: uppercase;
   font-weight: 700;
@@ -338,14 +351,14 @@ padding: 0 4.6rem;
 }
 
 .hobbies-image {
-  width: 200px;
+  width: 150px;
   justify-self: center;
   align-self: center;
-} */
+}
 
 /*==================== priorities ====================*/
 
-/* .priorities-title {
+.priorities-title {
   font-size: var(--small-font-size);
   text-transform: uppercase;
   font-weight: 700;
@@ -363,13 +376,13 @@ padding: 0 4.6rem;
 }
 
 .priorities-image {
-  width: 200px;
+  width: 180px;
   justify-self: center;
   align-self: center;
-} */
+}
 
 /*==================== skills ====================*/
-/* .skills-title {
+.skills-title {
   font-size: var(--small-font-size);
   text-transform: uppercase;
   font-weight: 700;
@@ -387,15 +400,23 @@ padding: 0 4.6rem;
 }
 
 .skills-image {
-  width: 200px;
+  width: 150px;
   justify-self: center;
   align-self: center;
 }
 
 .last-contact {
   margin-top: var(--mb-2-5);
-} */
-
+}
+.big-btn{
+  display: flex;
+  margin: 0 auto;
+  width: 30%;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
 /*==================== CONTACT ME ====================*/
 .contact-section {
   display: grid;
@@ -648,11 +669,6 @@ select {
   padding-right: 1rem;
 }
 
-
-
-
-
-
 /*==================== FOOTER ====================*/
 .footer {
   margin-top: 5rem;
@@ -681,12 +697,94 @@ select {
 }
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 
 
+  .home-blob {
+    width: 180px;
+  }
+
+  .skills-title {
+    font-size: var(--normal-font-size);
+  }
+}
+@media screen and (max-width: 750px) {
+  .grid{
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  .nav-menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+  .nav-list {
+    column-gap: 5rem;
+  }
+
+  .skills-title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification-data {
+    gap: 0.5rem;
+  }
+
+  .services-container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .services-content {
+    padding-right: 3.5rem;
+  }
+
+  .services-modal {
+    padding: 0 0.5rem;
+  }
+
+  .project-img {
+    width: 200px;
+  }
+  .testimonial-data,
+  .testimonial-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-img {
+    margin-right: 0;
+    margin-bottom: var(--mb-0-25);
+  }
+
+  .testimonial-data,
+  .testimonial-description {
+    text-align: center;
+  }
+}
 /* For medium devices */
 @media screen and (min-width: 768px) {
   .container {
@@ -702,7 +800,7 @@ select {
   .main,
   .footer-container {
     padding: 0 1rem;
-  } 
+  }
 
   .home-content {
     padding-top: .9rem;
