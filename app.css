@@ -402,7 +402,7 @@ border-radius: 1rem;
 }
 
 .contact-text{
-  padding-left: 2.4rem;
+  padding-left: 1.4rem;
 }
 
 .contact{
@@ -489,7 +489,7 @@ textarea{
 .btn {
   padding: 0.8rem 1.2rem;
   outline: none;
-  width: 30%;
+  width: 50%;
   border: none;
   text-decoration: none;
   background-color: var(--first-color-second);
@@ -502,6 +502,12 @@ textarea{
 
 .btn:hover{
   background-color: var(--first-color);
+}
+
+@media screen and (max-width: 850px) {
+.contact-section{
+  grid-template-columns: 1fr;
+}
 }
 /* .contact-section {
   display: grid;
