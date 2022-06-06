@@ -694,6 +694,9 @@ select{
   width: 100%;
   padding: 0 2.4rem 0.4rem;
 }
+.reg-form button{
+  margin: 2.4rem 0 3.8rem;
+}
 }
 /* .section {
   margin: auto;
