@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-
+  /*change favorite color*/
+  --hue-color: 250;
+  /* purple 250 - Green 142 - blue 230 - pink 340 */
   /*========== Colors ==========*/
   --first-color: #324C5C;
   --first-color-second: #231942;
-  --first-color-second-light: #cabaf7;
+  --first-color-second-light: #ded2ff;
   --text-color: #2F4858;
   --text-color-light: #696D7D;
   --body-color: #ECECEC;
@@ -13,7 +15,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   /*========== Font and typography ==========*/
-  --body-font: 'Quicksand', sans-serif;
+  --body-font: 'Plus Jakarta Sans', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -59,7 +61,7 @@
 }
 
 /*==================== BASE ====================*/
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -82,7 +84,8 @@ body {
 h1,
 h2,
 h3,
-h4, span {
+h4,
+span {
   color: var(--text-color);
   font-weight: var(--font-bold);
 }
@@ -95,7 +98,8 @@ ul {
 ol {
   list-style: none;
 }
-li{
+
+li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
@@ -104,16 +108,17 @@ a {
   text-decoration: none;
 }
 
-a:-webkit-any-link{
+a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-p{
+p {
   font-size: 1.5rem;
   line-height: 1.9rem;
   display: block;
@@ -122,8 +127,9 @@ p{
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 /*==================== LAYOUT ====================*/
-.grid{
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -133,10 +139,10 @@ p{
   height: 6.2rem;
   width: 100%;
   position: relative;
-} 
+}
 
 /*==================== NAV ====================*/
-.nav{
+.nav {
   display: flex;
   justify-content: center;
   padding: 0 6.2rem;
@@ -149,7 +155,9 @@ p{
   gap: 6.2rem;
   line-height: 6.2rem;
 }
-.nav-link:link, .nav-link:visited {
+
+.nav-link:link,
+.nav-link:visited {
   text-decoration: none;
   font-size: 1.6rem;
   color: var(--text-color);
@@ -157,7 +165,8 @@ p{
 }
 
 
- .nav-button:link, .nav-button:visited{
+.nav-button:link,
+.nav-button:visited {
   background-color: var(--first-color-second);
   color: var(--container-color);
   padding: 0.6rem 2.4rem;
@@ -169,7 +178,8 @@ p{
   background-color: var(--first-color);
 }
 
-.white-nav-btn:link, .white-nav-btn:visited {
+.white-nav-btn:link,
+.white-nav-btn:visited {
   background-color: var(--body-color);
   color: var(--text-color);
   padding: 0.6rem 1.9rem;
@@ -182,52 +192,67 @@ p{
 .white-nav-btn:hover {
   background-color: var(--first-color);
   color: var(--container-color);
-} 
+}
 
 /*==================== HOME ====================*/
-.main{
-  border-bottom: 2px solid var(--first-color-second);
+.main {
+  padding: 0 5.2rem;
+  border-bottom: 2px solid var(--first-color-second-light);
 }
-.section{
+
+.section {
   margin: 0 0 12rem;
 }
-.home-content{
+
+.home-content {
   max-width: 110rem;
   padding: 0 4.6rem;
   align-items: center;
   margin: 0 auto;
 }
-.home-data{
+
+.home-data {
   width: 90%;
   align-items: center;
   margin-left: auto;
 }
-.home-title{
+
+.home-title {
   font-size: 2.6rem;
   padding-bottom: 1.4rem;
 }
-.home-subtitle{
-  font-size:3.8rem;
+
+.home-subtitle {
+  font-size: 3.8rem;
   padding-bottom: 0.7rem;
 }
 
-.home-description{
+.home-subtitle span {
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: var(--text-color);
+  -webkit-text-fill-color: var(--text-color-light);
+}
+
+.home-description {
   font-size: 2rem;
   padding-bottom: 1.4rem;
 }
 
-.hero-image {
+.hero-img {
   text-align: center;
   position: relative;
 }
+
 .home-img {
   width: 85%;
   position: relative;
   margin-left: auto;
-} 
+}
 
 /*==================== BUTTONS ====================*/
-.button:link, .button:visited {
+.button:link,
+.button:visited {
   display: inline-block;
   width: auto;
   background-color: var(--first-color-second);
@@ -259,28 +284,45 @@ p{
 .about-me {
   padding: 0.6rem 2.4rem;
 }
-.about-container, .hobbies-container, .priorities-container, .skills-container{
+
+.about-container,
+.hobbies-container,
+.priorities-container,
+.skills-container {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 4.6rem;
 }
-.about-title, .hobbies-title, .priorities-title, .skills-title{
+
+.about-title,
+.hobbies-title,
+.priorities-title,
+.skills-title {
   font-size: 1.8rem;
-    text-transform: uppercase;
-    padding-bottom: 1.2rem;
-    position: relative;
+  text-transform: uppercase;
+  padding-bottom: 1.2rem;
+  position: relative;
 }
-.about-subtitle, .hobbies-subtitle, .priorities-subtitle, .skills-subtitle{
+
+.about-subtitle,
+.hobbies-subtitle,
+.priorities-subtitle,
+.skills-subtitle {
   font-size: 3.6rem;
-    padding-bottom: 5.2rem;
-    text-transform: capitalize;
+  padding-bottom: 5.2rem;
+  text-transform: capitalize;
 }
-.about-img, .skills-img, .hobby-img, .priorities-img{
+
+.about-img,
+.skills-img,
+.hobby-img,
+.priorities-img {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .about-image {
   width: 18rem;
   height: 26rem;
@@ -289,39 +331,52 @@ p{
   align-items: center;
   justify-content: center;
 }
-.about-text, .hobby-text, .priorities-text, .skills-text{
+
+.about-text p,
+.hobby-text,
+.priorities-text,
+.skills-text {
   display: flex;
   font-weight: 500;
+  padding-top: 5rem;
   margin: 0 auto;
   align-items: center;
 }
-.hobbies-container li, .priorities-container li, .skills-container li {
-  font-size: 1.5rem;
-  line-height: 1.7rem;
+.about-text p{
+  font-size: 1.1rem;
+}
+.hobbies-container li,
+.priorities-container li,
+.skills-container li {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
   padding-left: 0.9rem;
 }
-.hobbies-image{
+
+.hobbies-image {
   width: 17rem;
-  }
-  
-  .skills-image{
-    width: 17rem;
-  }
-  .priorities-image {
-    width: 180px;
-    justify-self: center;
-    align-self: center;
-  }
-.big-btn:link{
+}
+
+.skills-image {
+  width: 17rem;
+}
+
+.priorities-image {
+  width: 180px;
+  justify-self: center;
+  align-self: center;
+}
+
+.big-btn:link {
   display: flex;
   margin: 0 auto;
-  width: 30%;
+  width: 35%;
   height: 6.2rem;
   justify-content: center;
-    align-items: center;
-    font-size: 2.6rem;
-    font-weight: 700;
-    margin-bottom: 6.2rem;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 6.2rem;
 }
 
 /*==================== CONTACT ME ====================*/
@@ -390,7 +445,7 @@ textarea {
 
 .follow-socials {
   margin-top: 0.6rem;
-} */ 
+} */
 
 /*==================== LOGIN ====================*/
 /* .login-form {
@@ -578,35 +633,45 @@ select {
 
 /*==================== FOOTER ====================*/
 .footer {
+  display: block;
   margin-top: 5rem;
   margin-bottom: var(--mb-1);
 }
 
-.footer-line {
-  width: 100%;
-  border: .1px solid var(--first-color-second-light);
-}
-
-.footer-container {
-  text-align: center;
-  margin-top: var(--mb-1-5);
-}
-
-.footer-social {
-  padding: .7rem;
-  color: var(--first-color);
-  font-size: 1.3rem;
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  color: var(--first-color-second-light);
+  column-gap: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
   cursor: pointer;
+}
+
+.footer-social:link {
+  color: var(--first-color-second-light);
+  font-size: 2rem;
+  cursor: pointer;
+  letter-spacing: 1rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: var(--first-color-second-light);
 }
 
 .description-footer,
 .footer-copy {
   letter-spacing: 0.16rem;
+  font-size: 1.4rem;
+  color: var(--first-color-second-light);
+
 }
 
 /*========== SCROLL BAR ==========*/
-/* ::-webkit-scrollbar { */
-  /* width: 0.6rem;
+::-webkit-scrollbar {
+  width: 0.6rem;
   background-color: var(--scroll-bar-color);
   border-radius: 0.5rem;
 }
@@ -617,10 +682,161 @@ select {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-color-light);
-} */
+  background-color: var(--first-color-second-light);
+}
 
 /*==================== MEDIA QUERIES ====================*/
+/* For large devices */
+@media screen and (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .home-data {
+    text-align: center;
+    margin: 7.4rem auto 0;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+  .home-description{
+    font-size: 1.4rem;
+  }
+.hero-img{
+  width: 60%;
+  margin: 0 auto;
+}
+.big-btn:link {
+  font-size: 1.9rem;
+}
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 670px) {
+  .nav {
+    padding: 0 3.6rem;
+  }
+
+  .nav-list {
+    gap: 3rem;
+    line-height: 5.2rem;
+
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+
+    font-size: 1.5rem;
+    font-weight: var(--font-semi-bold);
+  }
+
+  .main {
+    padding: 0 2.6rem;
+  }
+
+  .home-img {
+    width: 100%;
+  }
+
+  .about-title,
+  .hobbies-title,
+  .priorities-title,
+  .skills-title {
+    font-size: 1.4;
+  }
+
+  .about-subtitle,
+  .hobbies-subtitle,
+  .priorities-subtitle,
+  .skills-subtitle {
+    font-size: 2.6rem;
+  }
+
+  .about-img,
+  .skills-img,
+  .hobby-img,
+  .priorities-img {
+    grid-row: 1;
+  }
+
+  .about-image {
+    width: 12rem;
+    height: 18rem;
+  }
+
+  .hobbies-image {
+    width: 12rem;
+  }
+
+  .skills-image {
+    width: 12rem;
+  }
+
+  .priorities-image {
+    width: 12rem;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 430px) {
+  .nav {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .nav-list {
+    gap: 1.5rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 1.2rem;
+  }
+
+  .main {
+    padding: 0 0.9rem;
+  }
+
+  .home-data {
+    padding: 0;
+  }
+
+  .home-title {
+    font-size: 2.2rem;
+  }
+
+  .home-subtitle {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    font-size: 1.4rem;
+  }
+
+  .about-subtitle,
+  .hobbies-subtitle,
+  .priorities-subtitle,
+  .skills-subtitle {
+    font-size: 1.7rem;
+    border-bottom: 0;
+    padding-bottom: 3.6rem;
+  }
+
+  .about-img,
+  .skills-img,
+  .hobby-img,
+  .priorities-img {
+    grid-row: 1;
+  }
+  .big-btn:link {
+    font-size: 1.3rem;
+  }
+}
+
+
 /* @media (max-width: 900px){
   .grid{
    grid-template-columns: 1fr;
