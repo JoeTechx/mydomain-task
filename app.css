@@ -698,6 +698,14 @@ select{
   margin: 2.4rem 0 3.8rem;
 }
 }
+
+@media screen and (max-width: 500px) {
+  .reg-form button{
+    margin: 2.4rem 3rem 3.8rem 0;
+    margin-right: 10rem;
+    width: 100%;
+  }
+}
 /* .section {
   margin: auto;
 }
