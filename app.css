@@ -835,6 +835,7 @@ select{
     padding: 0 2.6rem;
   }
 
+
   .home-img {
     width: 100%;
   }
@@ -877,7 +878,12 @@ select{
     width: 12rem;
   }
 }
-
+@media screen and (max-width: 540px) {
+.scroll-down{
+  left: 47%;
+  top: 74rem;
+}
+}
 /* For small devices */
 @media screen and (max-width: 430px) {
   .nav {
@@ -897,7 +903,10 @@ select{
   .main {
     padding: 0 0.9rem;
   }
-
+  .scroll-down{
+    left: 47%;
+    top:65rem;
+  }
   .home-data {
     padding: 0;
   }
