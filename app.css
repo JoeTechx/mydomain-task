@@ -128,10 +128,11 @@ p {
   margin-inline-end: 0px;
 }
 
-form{
+form {
   display: block;
   margin-top: 0;
 }
+
 /*==================== LAYOUT ====================*/
 .grid {
   display: grid;
@@ -200,7 +201,6 @@ form{
 
 /*==================== HOME ====================*/
 .main {
-  padding: 0 5.2rem;
   border-bottom: 2px solid var(--text-color-light);
 }
 
@@ -346,9 +346,11 @@ form{
   margin: 0 auto;
   align-items: center;
 }
-.about-text p{
+
+.about-text p {
   font-size: 1.1rem;
 }
+
 .hobbies-container li,
 .priorities-container li,
 .skills-container li {
@@ -384,40 +386,40 @@ form{
 }
 
 /*==================== CONTACT ME ====================*/
-.section{
+.contacts {
   margin: auto;
 }
 
-.contact-section{
-display: grid;
-grid-template-columns: 1fr 1fr;
-width: 80%;
-max-width:100%;
-height: auto;
-overflow-x: hidden;
-margin: 6.8rem auto;
-background-color: var(--body-color);
-padding: 3.6rem 2.4rem;
-border-radius: 1rem;
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  margin: 6.8rem auto;
+  background-color: var(--body-color);
+  padding: 3.6rem 2.4rem;
+  border-radius: 1rem;
 }
 
-.contact-text{
+.contact-text {
   padding-left: 1.4rem;
 }
 
-.contact{
+.contact {
   margin: 0.6rem 0 3rem;
   font-size: 2.2rem;
 }
 
-.contact-detail{
+.contact-detail {
   display: flex;
   align-items: center;
   margin-bottom: 1.2rem;
 }
 
 .email-icon,
-.phone-icon{
+.phone-icon {
   width: 1.9rem;
   height: 1.9rem;
   font-size: 1.6rem;
@@ -426,7 +428,7 @@ border-radius: 1rem;
 }
 
 .email-link:link,
-.phone-link:link{
+.phone-link:link {
   text-decoration: none;
   font-size: 1.4rem;
   color: var(--text-color);
@@ -441,11 +443,12 @@ border-radius: 1rem;
 
 .social-groups {
   display: flex;
-    column-gap: 2.4rem;
-    margin: 1.6rem 0 4.8rem;
+  column-gap: 2.4rem;
+  margin: 1.6rem 0 4.8rem;
 }
+
 .social-group:link {
-font-size: 1.8rem;
+  font-size: 1.8rem;
   color: var(--first-color);
   border-radius: 50%;
   padding: 1rem;
@@ -453,18 +456,20 @@ font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.4s;
 }
-.social-group:link:hover{
+
+.social-group:link:hover {
   background-color: var(--first-color);
   color: var(--scroll-thumb-color);
 }
-label{
+
+label {
   display: block;
   font-size: 1.4rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
-input{
+input {
   width: 80%;
   background-color: var(--body-color);
   margin-bottom: 2.2rem;
@@ -475,7 +480,7 @@ input{
   font-size: 1.2rem;
 }
 
-textarea{
+textarea {
   width: 80%;
   min-height: 11.2rem;
   background-color: var(--body-color);
@@ -500,80 +505,15 @@ textarea{
   margin-bottom: 4.2rem;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--first-color);
 }
 
 @media screen and (max-width: 850px) {
-.contact-section{
-  grid-template-columns: 1fr;
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
 }
-}
-/* .contact-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 55%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 2rem auto 0;
-  padding: 3.6rem 2.4rem;
-  border-radius: 1rem;
-}
-
-.contact-text {
-  padding-left: 2.4rem;
-}
-
-.contact {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.6rem;
-}
-
-.contact-detail {
-  padding: 0.3rem;
-}
-
-
-.email-link,,
-.phone-link {
-  color: var(--text-color);
-}
-
-.email-link,
-.phone-link {
-  margin-left: 0.6rem;
-}
-
-textarea {
-  width: 80%;
-  min-height: 11.2rem;
-  border: 2px solid var(--first-color-second);
-  background-color: var(--body-color);
-  outline: none;
-  border-radius: 0.4rem;
-  padding: 0.6rem 1.2rem;
-  margin-bottom: 3.2rem;
-}
-
-.btn {
-  padding-left: 6.5rem;
-  width: 80%;
-  border-radius: 2rem;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: var(--font-bold);
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.social-group {
-  margin-top: 0.6rem;
-}
-
-.follow-socials {
-  margin-top: 0.6rem;
-} */
 
 /*==================== LOGIN ====================*/
 /* .login-form {
@@ -660,6 +600,101 @@ input {
 } */
 
 /*==================== SIGN UP ====================*/
+.sign-ups {
+  margin: auto;
+}
+
+.reg-form-section {
+  background-color: var(--body-color);
+  width: 64%;
+  max-width: 100%;
+  margin: 6.8rem auto;
+  border-radius: 1rem;
+  padding-top: 2.4rem;
+}
+
+.reg-title {
+  font-size: var(--small-font-size);
+  text-transform: capitalize;
+  padding: 0 2.4rem 2.4rem;
+  margin: 0.6rem 0 3rem;
+  font-size: 1.4rem;
+}
+
+.account-detail {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.5rem;
+  padding: 0 2.4rem 0.4rem;
+}
+
+.reg--detail {
+  width: 112%;
+  padding: 0 2.4rem 0.4rem;
+}
+
+select {
+  width: 80%;
+  margin-bottom: var(--mb-1);
+  padding: 1.2rem 1.4rem;
+  border: 2px solid var(--first-color-second);
+  border-radius: 0.6rem;
+  background-color: var(--body-color);
+}
+
+.character-8 {
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.reg-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / span 2;
+  width: 30rem;
+  margin: 2.4rem auto 3.8rem;
+}
+
+.sign_in a:link{
+  color: var(--container-color);
+}
+.login--instead {
+  text-align: center;
+}
+
+.login-instead:link {
+  color: var(--text-color);
+  font-weight: var(--font-bold)
+}
+
+.sign-in-icon {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .account-detail {
+    grid-template-columns: 1fr;
+  }
+ .reg-detail input,
+.reg--detail input {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+} 
+select{
+  width: 100%;
+}
+.reg-detail label,
+.reg--detail label {
+  margin-bottom: 1rem;
+} 
+.reg--detail {
+  width: 100%;
+  padding: 0 2.4rem 0.4rem;
+}
+}
 /* .section {
   margin: auto;
 }
@@ -800,12 +835,12 @@ select {
 /*========== SCROLL BAR ==========*/
 ::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: var(--scroll-bar-color);
+  background-color: var(--text-color-light);
   border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
+  background-color: var(--first-color);
   border-radius: 0.5rem;
 }
 
@@ -829,16 +864,19 @@ select {
   .home-title {
     font-size: 2rem;
   }
-  .home-description{
+
+  .home-description {
     font-size: 1.4rem;
   }
-.hero-img{
-  width: 60%;
-  margin: 0 auto;
-}
-.big-btn:link {
-  font-size: 1.9rem;
-}
+
+  .hero-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .big-btn:link {
+    font-size: 1.9rem;
+  }
 
 }
 
@@ -959,9 +997,8 @@ select {
   .priorities-img {
     grid-row: 1;
   }
+
   .big-btn:link {
     font-size: 1.3rem;
   }
 }
-
-
